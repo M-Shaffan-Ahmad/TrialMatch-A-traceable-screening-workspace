@@ -1,0 +1,341 @@
+[
+  {
+    "kind": "correctness",
+    "shape": [
+      2,
+      3,
+      7,
+      7,
+      16,
+      12
+    ],
+    "causal": true,
+    "query_offset": 0,
+    "maximum_absolute_error": 2.384185791015625e-07,
+    "mean_absolute_error": 2.589813696829424e-08
+  },
+  {
+    "kind": "correctness",
+    "shape": [
+      2,
+      3,
+      5,
+      13,
+      16,
+      12
+    ],
+    "causal": true,
+    "query_offset": 8,
+    "maximum_absolute_error": 2.384185791015625e-07,
+    "mean_absolute_error": 2.879403737665598e-08
+  },
+  {
+    "kind": "correctness",
+    "shape": [
+      2,
+      3,
+      11,
+      17,
+      16,
+      12
+    ],
+    "causal": false,
+    "query_offset": 0,
+    "maximum_absolute_error": 2.384185791015625e-07,
+    "mean_absolute_error": 3.066206133439664e-08
+  },
+  {
+    "kind": "benchmark",
+    "mode": "dense_reference",
+    "length": 128,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 3.5762786865234375e-07,
+    "mean_absolute_error": 2.57868837394426e-08,
+    "measurements": [
+      {
+        "seconds": 0.0007156799983931705,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9568256,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 655360
+      },
+      {
+        "seconds": 0.0007452310001099249,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9568256,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 655360
+      },
+      {
+        "seconds": 0.0007568119999632472,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9568256,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 655360
+      },
+      {
+        "seconds": 0.0007056310005282285,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9568256,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 655360
+      },
+      {
+        "seconds": 0.0007596619998366805,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9568256,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 655360
+      }
+    ],
+    "median_seconds": 0.0007452310001099249
+  },
+  {
+    "kind": "benchmark",
+    "mode": "tiled_online_softmax",
+    "length": 128,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 3.5762786865234375e-07,
+    "mean_absolute_error": 2.57868837394426e-08,
+    "measurements": [
+      {
+        "seconds": 0.006074921999243088,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9243648,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 330752
+      },
+      {
+        "seconds": 0.005926986999838846,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9243648,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 330752
+      },
+      {
+        "seconds": 0.006485358999270829,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9243648,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 330752
+      },
+      {
+        "seconds": 0.005986829000903526,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9243648,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 330752
+      },
+      {
+        "seconds": 0.006155401999421883,
+        "baseline_allocated_bytes": 8912896,
+        "peak_allocated_bytes": 9243648,
+        "peak_reserved_bytes": 23068672,
+        "incremental_peak_allocated_bytes": 330752
+      }
+    ],
+    "median_seconds": 0.006074921999243088
+  },
+  {
+    "kind": "benchmark",
+    "mode": "dense_reference",
+    "length": 512,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 5.960464477539062e-07,
+    "mean_absolute_error": 2.4404798182331433e-08,
+    "measurements": [
+      {
+        "seconds": 0.0009558090005157283,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 19005440,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 8912896
+      },
+      {
+        "seconds": 0.0009516120007901918,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 19005440,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 8912896
+      },
+      {
+        "seconds": 0.0009760599987203022,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 19005440,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 8912896
+      },
+      {
+        "seconds": 0.0009647970000514761,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 19005440,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 8912896
+      },
+      {
+        "seconds": 0.0009458959993935423,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 19005440,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 8912896
+      }
+    ],
+    "median_seconds": 0.0009558090005157283
+  },
+  {
+    "kind": "benchmark",
+    "mode": "tiled_online_softmax",
+    "length": 512,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 5.960464477539062e-07,
+    "mean_absolute_error": 2.4404798182331433e-08,
+    "measurements": [
+      {
+        "seconds": 0.07793115599997691,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 10816512,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 723968
+      },
+      {
+        "seconds": 0.07781816100032302,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 10816512,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 723968
+      },
+      {
+        "seconds": 0.07818998800030386,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 10816512,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 723968
+      },
+      {
+        "seconds": 0.07788596700083872,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 10816512,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 723968
+      },
+      {
+        "seconds": 0.07760492200031877,
+        "baseline_allocated_bytes": 10092544,
+        "peak_allocated_bytes": 10816512,
+        "peak_reserved_bytes": 25165824,
+        "incremental_peak_allocated_bytes": 723968
+      }
+    ],
+    "median_seconds": 0.07788596700083872
+  },
+  {
+    "kind": "benchmark",
+    "mode": "dense_reference",
+    "length": 1024,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 5.960464477539062e-07,
+    "mean_absolute_error": 2.3466665055593694e-08,
+    "measurements": [
+      {
+        "seconds": 0.0012716189994534943,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 46284800,
+        "peak_reserved_bytes": 60817408,
+        "incremental_peak_allocated_bytes": 34619392
+      },
+      {
+        "seconds": 0.0012429109992808662,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 46284800,
+        "peak_reserved_bytes": 60817408,
+        "incremental_peak_allocated_bytes": 34619392
+      },
+      {
+        "seconds": 0.001273456000490114,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 46284800,
+        "peak_reserved_bytes": 60817408,
+        "incremental_peak_allocated_bytes": 34619392
+      },
+      {
+        "seconds": 0.0012633030000870349,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 46284800,
+        "peak_reserved_bytes": 60817408,
+        "incremental_peak_allocated_bytes": 34619392
+      },
+      {
+        "seconds": 0.001249228998858598,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 46284800,
+        "peak_reserved_bytes": 60817408,
+        "incremental_peak_allocated_bytes": 34619392
+      }
+    ],
+    "median_seconds": 0.0012633030000870349
+  },
+  {
+    "kind": "benchmark",
+    "mode": "tiled_online_softmax",
+    "length": 1024,
+    "dtype": "float32",
+    "query_tile": 32,
+    "key_tile": 64,
+    "causal": true,
+    "maximum_absolute_error": 5.960464477539062e-07,
+    "mean_absolute_error": 2.3466665055593694e-08,
+    "measurements": [
+      {
+        "seconds": 0.30434139300086827,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 12913664,
+        "peak_reserved_bytes": 27262976,
+        "incremental_peak_allocated_bytes": 1248256
+      },
+      {
+        "seconds": 0.30515984399971785,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 12913664,
+        "peak_reserved_bytes": 27262976,
+        "incremental_peak_allocated_bytes": 1248256
+      },
+      {
+        "seconds": 0.3042161239991401,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 12913664,
+        "peak_reserved_bytes": 27262976,
+        "incremental_peak_allocated_bytes": 1248256
+      },
+      {
+        "seconds": 0.3059659139998985,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 12913664,
+        "peak_reserved_bytes": 27262976,
+        "incremental_peak_allocated_bytes": 1248256
+      },
+      {
+        "seconds": 0.30516897999950743,
+        "baseline_allocated_bytes": 11665408,
+        "peak_allocated_bytes": 12913664,
+        "peak_reserved_bytes": 27262976,
+        "incremental_peak_allocated_bytes": 1248256
+      }
+    ],
+    "median_seconds": 0.30515984399971785
+  }
+]

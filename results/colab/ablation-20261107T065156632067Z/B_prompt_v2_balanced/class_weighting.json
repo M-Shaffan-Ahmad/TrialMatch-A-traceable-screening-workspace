@@ -1,0 +1,49 @@
+{
+  "method": "inverse_sqrt_capped",
+  "cap_on_relative_weight": 3.0,
+  "source": "accepted training examples only",
+  "normalization": "mean example weight = 1; batch loss divided by weighted target-token count",
+  "sampling": "Each original accepted example occurs once per epoch; no oversampling or dropped rows.",
+  "strata": {
+    "exclusion::excluded": {
+      "count": 8,
+      "raw_weight": 3.0,
+      "normalized_weight": 2.3122651073026557
+    },
+    "exclusion::not applicable": {
+      "count": 23,
+      "raw_weight": 3.0,
+      "normalized_weight": 2.3122651073026557
+    },
+    "exclusion::not enough information": {
+      "count": 65,
+      "raw_weight": 2.119506473759326,
+      "normalized_weight": 1.633620287991927
+    },
+    "exclusion::not excluded": {
+      "count": 292,
+      "raw_weight": 1.0,
+      "normalized_weight": 0.7707550357675519
+    },
+    "inclusion::included": {
+      "count": 88,
+      "raw_weight": 1.1129404133359357,
+      "normalized_weight": 0.8578044280878931
+    },
+    "inclusion::not applicable": {
+      "count": 5,
+      "raw_weight": 3.0,
+      "normalized_weight": 2.3122651073026557
+    },
+    "inclusion::not enough information": {
+      "count": 109,
+      "raw_weight": 1.0,
+      "normalized_weight": 0.7707550357675519
+    },
+    "inclusion::not included": {
+      "count": 13,
+      "raw_weight": 2.8956200345721097,
+      "normalized_weight": 2.231813723315866
+    }
+  }
+}

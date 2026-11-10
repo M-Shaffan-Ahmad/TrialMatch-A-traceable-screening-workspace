@@ -1,0 +1,15 @@
+{
+  "epoch": 2,
+  "relative_path": "epoch-02/adapter",
+  "base_model": {
+    "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "prompt_version": "v2",
+  "class_weighting": "inverse_sqrt_capped",
+  "validation_score": [
+    0.4419756248532582,
+    0.47513812154696133
+  ],
+  "test_set_used": false
+}

@@ -1,0 +1,143 @@
+{
+  "source_archive": "training-20261107T052336764258Z-results.zip",
+  "source_sha256": "28ce7ebfa76a86b0a600aab029d6a5a0f381c897606b4cb2acbdbeebd01190cd",
+  "dataset_hashes_match": true,
+  "original_manifest_matches": true,
+  "metrics_independently_recomputed": true,
+  "test_set_used": false,
+  "baseline_invalid": 163,
+  "baseline_invalid_missing_label_quotes": 163,
+  "final_invalid": 0,
+  "final_correct": 145,
+  "final_predicted_counts": {
+    "not enough information": 51,
+    "included": 27,
+    "not excluded": 116,
+    "not applicable": 12
+  },
+  "diagnostic_only_quote_repair": {
+    "warning": "Not an official baseline replacement; post-hoc syntax diagnosis only.",
+    "changed_outputs": 163,
+    "classification": {
+      "n": 206,
+      "accuracy": 0.10194174757281553,
+      "macro_f1": 0.10149345129831554,
+      "per_class": {
+        "excluded": {
+          "precision": 0.014285714285714285,
+          "recall": 1.0,
+          "f1": 0.028169014084507043,
+          "support": 2
+        },
+        "included": {
+          "precision": 0.5625,
+          "recall": 0.5142857142857142,
+          "f1": 0.5373134328358209,
+          "support": 35
+        },
+        "not applicable": {
+          "precision": 0.029411764705882353,
+          "recall": 0.08333333333333333,
+          "f1": 0.043478260869565216,
+          "support": 12
+        },
+        "not enough information": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 53
+        },
+        "not excluded": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 101
+        },
+        "not included": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": {
+        "gold_rows": [
+          "excluded",
+          "included",
+          "not applicable",
+          "not enough information",
+          "not excluded",
+          "not included"
+        ],
+        "prediction_columns": [
+          "excluded",
+          "included",
+          "not applicable",
+          "not enough information",
+          "not excluded",
+          "not included",
+          "__invalid__"
+        ],
+        "counts": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            18,
+            17,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            26,
+            13,
+            14,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            101,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "macro_policy": "Fixed applicable label set; zero-support class F1 is 0. Invalid outputs count as incorrect."
+    },
+    "remaining_invalid": 0
+  },
+  "hardware": "Tesla T4"
+}

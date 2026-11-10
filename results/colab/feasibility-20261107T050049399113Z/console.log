@@ -1,0 +1,30 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794027654.917476    4952 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794027654.985922    4952 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794027657.376466    4952 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794027657.376929    4952 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "torch": "2.14.1+cu130",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "cuda_runtime": "13.0",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_gib": 39.4935302734375,
+  "compute_capability": [
+    8,
+    0
+  ],
+  "dtype": "torch.bfloat16",
+  "seed": 42
+}
+Tokenizer compatibility passed.
+Loading both selected models on the GPU.
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Running one real optimizer step on one training example.
+PASSED: GPU/model loading, tokenizer compatibility, optimizer update, adapter save/reload.
+Artifacts saved to /content/drive/MyDrive/TrialMatch/results/feasibility-20261107T050049399113Z

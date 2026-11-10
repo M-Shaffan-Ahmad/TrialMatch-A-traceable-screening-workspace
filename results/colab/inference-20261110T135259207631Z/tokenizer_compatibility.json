@@ -1,0 +1,13 @@
+{
+  "compatible": true,
+  "checks": {
+    "vocabulary_equal": true,
+    "added_vocabulary_equal": true,
+    "special_token_ids_equal": true,
+    "special_tokens_map_equal": true,
+    "probe_encodings_equal": true,
+    "chat_templates_equal": true
+  },
+  "target_tokenizer_length": 151665,
+  "draft_tokenizer_length": 151665
+}

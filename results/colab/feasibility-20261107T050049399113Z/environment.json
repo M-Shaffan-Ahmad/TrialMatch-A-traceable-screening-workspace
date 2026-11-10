@@ -1,0 +1,16 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "torch": "2.14.1+cu130",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "cuda_runtime": "13.0",
+  "gpu_name": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_gib": 39.4935302734375,
+  "compute_capability": [
+    8,
+    0
+  ],
+  "dtype": "torch.bfloat16",
+  "seed": 42
+}

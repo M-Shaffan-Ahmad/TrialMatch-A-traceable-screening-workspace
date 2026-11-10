@@ -1,0 +1,349 @@
+{
+  "overall": {
+    "classification": {
+      "n": 206,
+      "accuracy": 0.7330097087378641,
+      "macro_f1": 0.38263055029462945,
+      "per_class": {
+        "excluded": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        },
+        "included": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8,
+          "f1": 0.7887323943661971,
+          "support": 35
+        },
+        "not applicable": {
+          "precision": 1.0,
+          "recall": 0.08333333333333333,
+          "f1": 0.15384615384615385,
+          "support": 12
+        },
+        "not enough information": {
+          "precision": 0.6470588235294118,
+          "recall": 0.41509433962264153,
+          "f1": 0.5057471264367817,
+          "support": 53
+        },
+        "not excluded": {
+          "precision": 0.7407407407407407,
+          "recall": 0.9900990099009901,
+          "f1": 0.847457627118644,
+          "support": 101
+        },
+        "not included": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": {
+        "gold_rows": [
+          "excluded",
+          "included",
+          "not applicable",
+          "not enough information",
+          "not excluded",
+          "not included"
+        ],
+        "prediction_columns": [
+          "excluded",
+          "included",
+          "not applicable",
+          "not enough information",
+          "not excluded",
+          "not included",
+          "__invalid__"
+        ],
+        "counts": [
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            28,
+            0,
+            7,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            2,
+            9,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            22,
+            24,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            100,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "macro_policy": "Fixed applicable label set; zero-support class F1 is 0. Invalid outputs count as incorrect."
+    },
+    "evidence": {
+      "n": 206,
+      "tp": 82,
+      "fp": 134,
+      "fn": 33,
+      "micro": {
+        "precision": 0.37962962962962965,
+        "recall": 0.7130434782608696,
+        "f1": 0.4954682779456193
+      },
+      "macro": {
+        "precision": 0.723705501618123,
+        "recall": 0.7597087378640777,
+        "f1": 0.7267578699617535
+      },
+      "both_empty_examples": 92,
+      "invalid_examples": 0,
+      "micro_no_evidence_condition": false,
+      "empty_policy": "Per example: both empty=1, exactly one empty=0. All-empty micro=undefined/null.",
+      "invalid_policy": "Invalid output: macro=0; micro uses empty predicted set (all gold citations become false negatives). Invalid rate is reported separately; no fabricated citations are added."
+    },
+    "invalid_outputs": 0
+  },
+  "by_criterion_type": {
+    "inclusion": {
+      "classification": {
+        "n": 66,
+        "accuracy": 0.7272727272727273,
+        "macro_f1": 0.3726216950827773,
+        "per_class": {
+          "included": {
+            "precision": 0.7777777777777778,
+            "recall": 0.8,
+            "f1": 0.7887323943661971,
+            "support": 35
+          },
+          "not applicable": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "not enough information": {
+            "precision": 0.6666666666666666,
+            "recall": 0.7407407407407407,
+            "f1": 0.7017543859649122,
+            "support": 27
+          },
+          "not included": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          }
+        },
+        "confusion_matrix": {
+          "gold_rows": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included"
+          ],
+          "prediction_columns": [
+            "included",
+            "not applicable",
+            "not enough information",
+            "not included",
+            "__invalid__"
+          ],
+          "counts": [
+            [
+              28,
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              7,
+              0,
+              20,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0,
+              0
+            ]
+          ]
+        },
+        "macro_policy": "Fixed applicable label set; zero-support class F1 is 0. Invalid outputs count as incorrect."
+      },
+      "evidence": {
+        "n": 66,
+        "tp": 58,
+        "fp": 95,
+        "fn": 9,
+        "micro": {
+          "precision": 0.3790849673202614,
+          "recall": 0.8656716417910447,
+          "f1": 0.5272727272727272
+        },
+        "macro": {
+          "precision": 0.6401515151515151,
+          "recall": 0.7613636363636364,
+          "f1": 0.6612947658402204
+        },
+        "both_empty_examples": 6,
+        "invalid_examples": 0,
+        "micro_no_evidence_condition": false,
+        "empty_policy": "Per example: both empty=1, exactly one empty=0. All-empty micro=undefined/null.",
+        "invalid_policy": "Invalid output: macro=0; micro uses empty predicted set (all gold citations become false negatives). Invalid rate is reported separately; no fabricated citations are added."
+      },
+      "invalid_outputs": 0
+    },
+    "exclusion": {
+      "classification": {
+        "n": 140,
+        "accuracy": 0.7357142857142858,
+        "macro_f1": 0.286864406779661,
+        "per_class": {
+          "excluded": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          "not applicable": {
+            "precision": 1.0,
+            "recall": 0.09090909090909091,
+            "f1": 0.16666666666666666,
+            "support": 11
+          },
+          "not enough information": {
+            "precision": 0.5,
+            "recall": 0.07692307692307693,
+            "f1": 0.13333333333333333,
+            "support": 26
+          },
+          "not excluded": {
+            "precision": 0.7407407407407407,
+            "recall": 0.9900990099009901,
+            "f1": 0.847457627118644,
+            "support": 101
+          }
+        },
+        "confusion_matrix": {
+          "gold_rows": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded"
+          ],
+          "prediction_columns": [
+            "excluded",
+            "not applicable",
+            "not enough information",
+            "not excluded",
+            "__invalid__"
+          ],
+          "counts": [
+            [
+              0,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              9,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              24,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              100,
+              0
+            ]
+          ]
+        },
+        "macro_policy": "Fixed applicable label set; zero-support class F1 is 0. Invalid outputs count as incorrect."
+      },
+      "evidence": {
+        "n": 140,
+        "tp": 24,
+        "fp": 39,
+        "fn": 24,
+        "micro": {
+          "precision": 0.38095238095238093,
+          "recall": 0.5,
+          "f1": 0.43243243243243246
+        },
+        "macro": {
+          "precision": 0.763095238095238,
+          "recall": 0.7589285714285714,
+          "f1": 0.7576190476190476
+        },
+        "both_empty_examples": 86,
+        "invalid_examples": 0,
+        "micro_no_evidence_condition": false,
+        "empty_policy": "Per example: both empty=1, exactly one empty=0. All-empty micro=undefined/null.",
+        "invalid_policy": "Invalid output: macro=0; micro uses empty predicted set (all gold citations become false negatives). Invalid rate is reported separately; no fabricated citations are added."
+      },
+      "invalid_outputs": 0
+    }
+  }
+}

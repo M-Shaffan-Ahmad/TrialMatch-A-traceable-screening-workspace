@@ -1,0 +1,7 @@
+{
+  "epoch": 2,
+  "global_step": 152,
+  "seconds": 127.96453236000002,
+  "trainable_parameters": 18464768,
+  "peak_allocated_gib": 6.346939563751221
+}

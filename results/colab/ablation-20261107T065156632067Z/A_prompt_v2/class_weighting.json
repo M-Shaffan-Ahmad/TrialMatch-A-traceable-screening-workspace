@@ -1,0 +1,49 @@
+{
+  "method": "none",
+  "cap_on_relative_weight": 3.0,
+  "source": "accepted training examples only",
+  "normalization": "mean example weight = 1; batch loss divided by weighted target-token count",
+  "sampling": "Each original accepted example occurs once per epoch; no oversampling or dropped rows.",
+  "strata": {
+    "exclusion::excluded": {
+      "count": 8,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "exclusion::not applicable": {
+      "count": 23,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "exclusion::not enough information": {
+      "count": 65,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "exclusion::not excluded": {
+      "count": 292,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "inclusion::included": {
+      "count": 88,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "inclusion::not applicable": {
+      "count": 5,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "inclusion::not enough information": {
+      "count": 109,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    },
+    "inclusion::not included": {
+      "count": 13,
+      "raw_weight": 1.0,
+      "normalized_weight": 1.0
+    }
+  }
+}

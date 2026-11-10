@@ -1,0 +1,36 @@
+TrialMatch | Generative AI Assignment 2
+Muhammad Shaffan Ahmad | 23i-0673 | Gen AI Section A
+
+IEEE report PDF
+TrialMatch-IEEE-Report.pdf
+
+GitHub source repository (URL provided by the student)
+https://github.com/M-Shaffan-Ahmad/TrialMatch-A-traceable-screening-workspace
+
+Demo video (URL provided by the student)
+https://youtu.be/7SLR7LBg0mo
+
+Selected adapter attachment
+trialmatch-selected-adapter.zip
+Publish this exact ZIP as a GitHub Release asset or on an evaluator-accessible
+download service. Paste the resulting direct download link in Classroom.
+Base checkpoint: Qwen/Qwen2.5-1.5B-Instruct
+Base revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+Adapter: prompt v2, unweighted LoRA, epoch 3.
+
+Source and evidence archive
+trialmatch-colab-starter.zip
+Extract its contents into the repository root for publication. It includes
+the LaTeX sources, setup instructions, notebooks, fixed split manifest,
+selected adapter metadata, and measured validation and benchmark records.
+
+Held-out evaluation
+The report currently contains measured validation results. For final test
+results, run notebooks/06_colab_final_evaluation.ipynb with a CUDA GPU,
+the source ZIP and the selected adapter ZIP. Save the resulting run archive
+and incorporate its measured comparison in the report before submission
+if time permits.
+
+Upload the PDF in Classroom, paste the repository, adapter download and
+demo links, and verify each link is accessible to the evaluator. Include
+the source and adapter ZIPs as attachments if Classroom allows them.

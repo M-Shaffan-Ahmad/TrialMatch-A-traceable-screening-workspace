@@ -1,0 +1,91 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794035132.700365    6990 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794035132.773154    6990 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794035135.228506    6990 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794035135.229120    6990 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+{
+  "torch": "2.14.1+cu130",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "cuda": "13.0",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "gpu_total_gib": 39.4935302734375,
+  "dtype": "torch.bfloat16"
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Evaluating the untouched base model on validation.
+Epoch 1: step 10/228, loss 0.2174
+Epoch 1: step 20/228, loss 0.2600
+Epoch 1: step 30/228, loss 0.1924
+Epoch 1: step 40/228, loss 0.2410
+Epoch 1: step 50/228, loss 0.2615
+Epoch 1: step 60/228, loss 0.1863
+Epoch 1: step 70/228, loss 0.1459
+Validation for epoch 1.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Validation: 20/206
+Validation: 40/206
+Validation: 60/206
+Validation: 80/206
+Validation: 100/206
+Validation: 120/206
+Validation: 140/206
+Validation: 160/206
+Validation: 180/206
+Validation: 200/206
+Validation: 206/206
+Epoch 2: step 80/228, loss 0.0551
+Epoch 2: step 90/228, loss 0.0954
+Epoch 2: step 100/228, loss 0.0666
+Epoch 2: step 110/228, loss 0.0543
+Epoch 2: step 120/228, loss 0.0533
+Epoch 2: step 130/228, loss 0.1453
+Epoch 2: step 140/228, loss 0.0720
+Epoch 2: step 150/228, loss 0.1250
+Validation for epoch 2.
+Validation: 20/206
+Validation: 40/206
+Validation: 60/206
+Validation: 80/206
+Validation: 100/206
+Validation: 120/206
+Validation: 140/206
+Validation: 160/206
+Validation: 180/206
+Validation: 200/206
+Validation: 206/206
+Epoch 3: step 160/228, loss 0.0578
+Epoch 3: step 170/228, loss 0.0514
+Epoch 3: step 180/228, loss 0.1533
+Epoch 3: step 190/228, loss 0.0473
+Epoch 3: step 200/228, loss 0.0479
+Epoch 3: step 210/228, loss 0.0287
+Epoch 3: step 220/228, loss 0.0324
+Validation for epoch 3.
+Validation: 20/206
+Validation: 40/206
+Validation: 60/206
+Validation: 80/206
+Validation: 100/206
+Validation: 120/206
+Validation: 140/206
+Validation: 160/206
+Validation: 180/206
+Validation: 200/206
+Validation: 206/206
+Validation: 20/206
+Validation: 40/206
+Validation: 60/206
+Validation: 80/206
+Validation: 100/206
+Validation: 120/206
+Validation: 140/206
+Validation: 160/206
+Validation: 180/206
+Validation: 200/206
+Validation: 206/206
+Completed. Selected epoch 2. Validation artifacts: /content/drive/MyDrive/TrialMatch/results/ablation-20261107T065156632067Z/B_prompt_v2_balanced
+Selected epoch: 2

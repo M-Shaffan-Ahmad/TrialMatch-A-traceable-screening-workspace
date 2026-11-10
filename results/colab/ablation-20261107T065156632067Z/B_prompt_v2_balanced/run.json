@@ -1,0 +1,44 @@
+{
+  "config": {
+    "seed": 42,
+    "epochs": 3,
+    "experiment_id": "prompt_v2_balanced",
+    "prompt_version": "v2",
+    "class_weighting": "inverse_sqrt_capped",
+    "class_weight_cap": 3.0,
+    "batch_size": 2,
+    "accumulation": 4,
+    "learning_rate": 0.0002,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.01,
+    "max_length": 2048,
+    "eval_batch_size": 4,
+    "max_new_tokens": 192
+  },
+  "provenance": {
+    "model": {
+      "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+    },
+    "dataset_revision": "1cfcafde94a1560a33b4addc1638664fe28fc059",
+    "train_sha256": "0dbad7eb6a47bff1de415cc35a1bec040a19f13978e4646555a3cfb730d56dfc",
+    "validation_sha256": "fbee0be9a98a08174700423a45258c076439b1d7e4cba2a20a65be270ca3f1bf",
+    "source_sha256": "cd1a846d06082a33d883d07cd8c603800f1ed8ca78090750e3383283c8dc22a8",
+    "environment": {
+      "torch": "2.14.1+cu130",
+      "transformers": "4.57.1",
+      "peft": "0.17.1",
+      "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+      "cuda": "13.0",
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "gpu_total_gib": 39.4935302734375,
+      "dtype": "torch.bfloat16"
+    },
+    "decoding": "Transformers library greedy; custom assignment decoders pending"
+  },
+  "test_set_used": false,
+  "selection_rule": "validation macro-F1, then evidence micro-F1, then earliest epoch"
+}

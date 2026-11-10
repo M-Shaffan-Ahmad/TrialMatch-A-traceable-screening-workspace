@@ -1,0 +1,34 @@
+{
+  "source_archive_sha256": "caad4221e2a7aa1b6b75266a2fa0292bacd923837977fa2fbea45f27aeb70eba",
+  "verified_metric_stages": [
+    "A_prompt_v2/baseline",
+    "A_prompt_v2/epoch-01/validation",
+    "A_prompt_v2/epoch-02/validation",
+    "A_prompt_v2/epoch-03/validation",
+    "A_prompt_v2/selected-adapter-validation",
+    "B_prompt_v2_balanced/baseline",
+    "B_prompt_v2_balanced/epoch-01/validation",
+    "B_prompt_v2_balanced/epoch-02/validation",
+    "B_prompt_v2_balanced/epoch-03/validation",
+    "B_prompt_v2_balanced/selected-adapter-validation"
+  ],
+  "baseline_predictions_identical": true,
+  "data_hashes_match": true,
+  "recommended_candidate": "A_prompt_v2, epoch 3",
+  "test_set_used": false,
+  "A_correct": 152,
+  "B_correct": 153,
+  "A_predicted_labels": {
+    "not enough information": 52,
+    "included": 29,
+    "not excluded": 116,
+    "not applicable": 9
+  },
+  "B_predicted_labels": {
+    "not enough information": 44,
+    "included": 34,
+    "not excluded": 116,
+    "not applicable": 11,
+    "not included": 1
+  }
+}

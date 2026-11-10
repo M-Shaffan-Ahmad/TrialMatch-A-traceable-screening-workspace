@@ -1,0 +1,95 @@
+test_comparison_rejects_hardware_and_budget_confounds (test_ablations.AblationComparisonTests.test_comparison_rejects_hardware_and_budget_confounds) ... ok
+test_reused_baseline_requires_identical_protocol_and_provenance (test_ablations.PromptAndWeightsTests.test_reused_baseline_requires_identical_protocol_and_provenance) ... ok
+test_v1_unchanged_and_v2_no_target_or_metadata_leak (test_ablations.PromptAndWeightsTests.test_v1_unchanged_and_v2_no_target_or_metadata_leak) ... ok
+test_weights_capped_normalized_and_type_specific (test_ablations.PromptAndWeightsTests.test_weights_capped_normalized_and_type_specific) ... ok
+test_all_one_weights_match_real_qwen_causal_loss (test_ablations.WeightedLossTests.test_all_one_weights_match_real_qwen_causal_loss) ... ok
+test_weighted_micro_batches_match_full_batch_and_all_ones_match_original (test_ablations.WeightedLossTests.test_weighted_micro_batches_match_full_batch_and_all_ones_match_original) ... ok
+test_allowlist_blocks_generated_content (test_data_contract.DataContractTests.test_allowlist_blocks_generated_content) ... ok
+test_empty_evidence_is_preserved (test_data_contract.DataContractTests.test_empty_evidence_is_preserved) ... ok
+test_fixed_split_is_disjoint_and_input_order_independent (test_data_contract.DataContractTests.test_fixed_split_is_disjoint_and_input_order_independent) ... ok
+test_preserve_sentence_ids (test_data_contract.DataContractTests.test_preserve_sentence_ids) ... ok
+test_reject_dangling_evidence (test_data_contract.DataContractTests.test_reject_dangling_evidence) ... ok
+test_reject_wrong_label_for_type (test_data_contract.DataContractTests.test_reject_wrong_label_for_type) ... ok
+test_unexpected_patient_count_fails (test_data_contract.DataContractTests.test_unexpected_patient_count_fails) ... ok
+test_all_empty_micro_undefined_and_macro_one (test_evaluation.MetricsTests.test_all_empty_micro_undefined_and_macro_one) ... ok
+test_evidence_micro_and_macro_empty_conventions (test_evaluation.MetricsTests.test_evidence_micro_and_macro_empty_conventions) ... ok
+test_fixed_label_sets_and_type_breakdown (test_evaluation.MetricsTests.test_fixed_label_sets_and_type_breakdown) ... ok
+test_hand_calculated_classification_and_invalid_column (test_evaluation.MetricsTests.test_hand_calculated_classification_and_invalid_column) ... ok
+test_invalid_empty_response_is_not_rewarded (test_evaluation.MetricsTests.test_invalid_empty_response_is_not_rewarded) ... ok
+test_plain_and_fenced_json (test_evaluation.PredictionTests.test_plain_and_fenced_json) ... ok
+test_reject_bad_categories_ids_duplicates_and_trailing_prose (test_evaluation.PredictionTests.test_reject_bad_categories_ids_duplicates_and_trailing_prose) ... ok
+test_future_values_do_not_change_earlier_causal_outputs (test_inference.AttentionTests.test_future_values_do_not_change_earlier_causal_outputs) ... ok
+test_shapes_mask_offsets_and_online_stability (test_inference.AttentionTests.test_shapes_mask_offsets_and_online_stability) ... ok
+test_cached_and_uncached_match_library_and_each_other (test_inference.DecodingTests.test_cached_and_uncached_match_library_and_each_other) ... ok
+test_eos_and_zero_output_limit (test_inference.DecodingTests.test_eos_and_zero_output_limit) ... ok
+test_scripted_partial_acceptance_and_rejection_positions (test_inference.DecodingTests.test_scripted_partial_acceptance_and_rejection_positions) ... ok
+test_speculation_rejection_and_all_accepted_rounds (test_inference.DecodingTests.test_speculation_rejection_and_all_accepted_rounds) ... ok
+test_form_validation_screen_exports_comparison_and_stale_input (test_screening.BrowserTests.test_form_validation_screen_exports_comparison_and_stale_input) ... 2026-11-10 19:31:03.205 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_tiny_models_use_all_custom_modes_and_repeated_live_comparison (test_screening.RuntimeIntegrationTests.test_real_tiny_models_use_all_custom_modes_and_repeated_live_comparison) ... ok
+test_aggregate_never_promotes_unknown_invalid_uncited_or_all_na (test_screening.ScreeningTests.test_aggregate_never_promotes_unknown_invalid_uncited_or_all_na) ... ok
+test_criterion_types_limits_and_blank_lines (test_screening.ScreeningTests.test_criterion_types_limits_and_blank_lines) ... ok
+test_note_numbering_preserves_original_ids_and_rejects_mixed_or_duplicates (test_screening.ScreeningTests.test_note_numbering_preserves_original_ids_and_rejects_mixed_or_duplicates) ... ok
+test_source_citations_and_html_escape (test_screening.ScreeningTests.test_source_citations_and_html_escape) ... ok
+test_changed_special_token_fails_compatibility (test_sft.SupervisionTests.test_changed_special_token_fails_compatibility) ... ok
+test_changed_token_ids_fail_compatibility (test_sft.SupervisionTests.test_changed_token_ids_fail_compatibility) ... ok
+test_overlength_rejected_instead_of_truncated (test_sft.SupervisionTests.test_overlength_rejected_instead_of_truncated) ... ok
+test_prompt_masked_and_full_assistant_json_supervised (test_sft.SupervisionTests.test_prompt_masked_and_full_assistant_json_supervised) ... ok
+test_optimizer_update_and_adapter_reload (test_sft.TinyModelTests.test_optimizer_update_and_adapter_reload) ... /home/shaffan/UNI/Semester 7/GEnai/Ass2/.venv/lib/python3.12/site-packages/peft/utils/save_and_load.py:286: UserWarning: Could not find a config file in  - will assume that the vocabulary was not modified.
+  warnings.warn(
+ok
+test_classification_is_primary_selection_metric (test_training.BatchTests.test_classification_is_primary_selection_metric) ... ok
+test_incomplete_update_group_covers_every_example (test_training.BatchTests.test_incomplete_update_group_covers_every_example) ... ok
+test_real_tiny_model_resume_matches_uninterrupted_training (test_training.WorkflowTests.test_real_tiny_model_resume_matches_uninterrupted_training) ... # Prompt v2 and class-balancing ablation
+
+Validation only. Same model, prompt, dataset, runtime, example exposure and update budget.
+
+| Metric | A: prompt v2 | B: v2 + weighting | B minus A |
+|---|---:|---:|---:|
+| Accuracy | 1.0000 | 1.0000 | 0.0000 |
+| Classification macro-F1 | 0.1667 | 0.1667 | 0.0000 |
+| Evidence micro-F1 | 1.0000 | 1.0000 | 0.0000 |
+| Evidence macro-F1 | 1.0000 | 1.0000 | 0.0000 |
+| Invalid outputs | 0 | 0 | 0 |
+
+| Label | Support | A recall | B recall | A F1 | B F1 |
+|---|---:|---:|---:|---:|---:|
+| excluded | 0 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| included | 1 | 1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| not applicable | 0 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| not enough information | 0 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| not excluded | 0 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+| not included | 0 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
+
+Each run selects its own epoch using the same validation rule. This compares checkpoint-selected training recipes; validation selection can be optimistic. No test results are claimed.
+
+Training loss values optimize different objectives and should not be compared as identical quantities; each log also records unweighted token loss.
+
+Historical original prompt-v1 run: accuracy 0.7039, macro-F1 0.4119, hardware Tesla T4. New A/B hardware: fixture. The historical comparison is contextual; hardware/source differences must be disclosed.
+
+Evaluating the untouched base model on validation.
+You're using a PreTrainedTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Validation: 2/2
+Validation for epoch 1.
+Validation: 2/2
+Validation for epoch 2.
+Validation: 2/2
+Validation: 2/2
+Completed. Selected epoch 1. Validation artifacts: /tmp/tmp8356hzp5/complete
+Evaluating the untouched base model on validation.
+Validation: 2/2
+Validation for epoch 1.
+Validation: 2/2
+Evaluating the untouched base model on validation.
+Validation for epoch 1.
+Validation for epoch 2.
+Validation: 2/2
+Validation: 2/2
+Completed. Selected epoch 1. Validation artifacts: /tmp/tmp8356hzp5/resumed
+ok
+test_token_weighted_accumulation_matches_full_batch (test_training.WorkflowTests.test_token_weighted_accumulation_matches_full_batch) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 2.927s
+
+OK

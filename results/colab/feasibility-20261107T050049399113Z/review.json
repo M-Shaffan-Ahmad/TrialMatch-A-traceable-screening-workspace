@@ -1,0 +1,15 @@
+{
+  "source_archive": "feasibility-20261107T050049399113Z.zip",
+  "source_sha256": "ec7af4e8895b20b4f50a9cbfc5947b459a1f9906f03b847729a6c63e1146e0cf",
+  "archive_integrity": "passed",
+  "dataset_manifest_matches": true,
+  "model_revisions_match": true,
+  "test_set_used": false,
+  "scope": "Review of uploaded one-step Colab feasibility artifacts only",
+  "adapter_weights_imported": false,
+  "limitations": [
+    "One 217-token training example, not a full training run.",
+    "3.40 GiB is peak allocated memory for that step, not full GPU use or the longest example.",
+    "16-token synthetic reload agreement is a smoke check, not decoder equivalence or eligibility evaluation."
+  ]
+}

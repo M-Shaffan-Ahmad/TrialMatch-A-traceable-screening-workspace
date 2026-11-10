@@ -1,0 +1,101 @@
+[
+  {
+    "input_tokens": 128,
+    "output_tokens": 32,
+    "metrics": {
+      "uncached": {
+        "prefill_seconds": 0.08293576200048847,
+        "decode_seconds": 2.5199788240006455,
+        "total_seconds": 2.602498865000598,
+        "tokens_per_second": 12.295874718851278,
+        "peak_allocated_bytes": 4219003392,
+        "incremental_peak_allocated_bytes": 48809472
+      },
+      "cached": {
+        "prefill_seconds": 0.08369615399897157,
+        "decode_seconds": 2.4510855169992283,
+        "total_seconds": 2.53527817199938,
+        "tokens_per_second": 12.621889129729716,
+        "peak_allocated_bytes": 4214105088,
+        "incremental_peak_allocated_bytes": 43911168
+      },
+      "speculative": {
+        "prefill_seconds": 0.11980527800005802,
+        "decode_seconds": 2.1461110660002305,
+        "total_seconds": 2.268418898998789,
+        "tokens_per_second": 14.106741931185562,
+        "peak_allocated_bytes": 4255647744,
+        "incremental_peak_allocated_bytes": 85453824,
+        "acceptance_rate": 1.0
+      }
+    },
+    "cached_speedup_vs_uncached": 1.0265141291964053,
+    "speculative_speedup_vs_cached": 1.117641090505098
+  },
+  {
+    "input_tokens": 512,
+    "output_tokens": 64,
+    "metrics": {
+      "uncached": {
+        "prefill_seconds": 0.08706765900024038,
+        "decode_seconds": 5.634919993999574,
+        "total_seconds": 5.721987652999815,
+        "tokens_per_second": 11.184924519445143,
+        "peak_allocated_bytes": 4346772992,
+        "incremental_peak_allocated_bytes": 176576000
+      },
+      "cached": {
+        "prefill_seconds": 0.08628028100065421,
+        "decode_seconds": 4.9137270049996005,
+        "total_seconds": 5.00015489299949,
+        "tokens_per_second": 12.799603486204749,
+        "peak_allocated_bytes": 4342302720,
+        "incremental_peak_allocated_bytes": 172105728
+      },
+      "speculative": {
+        "prefill_seconds": 0.12345990200083179,
+        "decode_seconds": 4.209975843999928,
+        "total_seconds": 4.3337879619994055,
+        "tokens_per_second": 14.76768142815954,
+        "peak_allocated_bytes": 4504286720,
+        "incremental_peak_allocated_bytes": 334089728,
+        "acceptance_rate": 1.0
+      }
+    },
+    "cached_speedup_vs_uncached": 1.1443620798649523,
+    "speculative_speedup_vs_cached": 1.1537608523635876
+  },
+  {
+    "input_tokens": 1024,
+    "output_tokens": 128,
+    "metrics": {
+      "uncached": {
+        "prefill_seconds": 0.2047484569993685,
+        "decode_seconds": 27.10109744500005,
+        "total_seconds": 27.30584590199942,
+        "tokens_per_second": 4.687640897827943,
+        "peak_allocated_bytes": 4523992576,
+        "incremental_peak_allocated_bytes": 353791488
+      },
+      "cached": {
+        "prefill_seconds": 0.18661644399981014,
+        "decode_seconds": 9.950606353000694,
+        "total_seconds": 10.147191997000846,
+        "tokens_per_second": 12.614327198877513,
+        "peak_allocated_bytes": 4514281472,
+        "incremental_peak_allocated_bytes": 344080384
+      },
+      "speculative": {
+        "prefill_seconds": 0.25916112000049907,
+        "decode_seconds": 8.508853260998876,
+        "total_seconds": 8.769128591999106,
+        "tokens_per_second": 14.59666130529621,
+        "peak_allocated_bytes": 4838859264,
+        "incremental_peak_allocated_bytes": 668658176,
+        "acceptance_rate": 1.0
+      }
+    },
+    "cached_speedup_vs_uncached": 2.6909755832027296,
+    "speculative_speedup_vs_cached": 1.1571494123440127
+  }
+]

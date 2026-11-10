@@ -1,0 +1,13 @@
+{
+  "epoch": 3,
+  "relative_path": "epoch-03/adapter",
+  "base_model": {
+    "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "validation_score": [
+    0.411876206231045,
+    0.532258064516129
+  ],
+  "test_set_used": false
+}

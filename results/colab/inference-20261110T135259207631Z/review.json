@@ -1,0 +1,13 @@
+{
+  "archive_sha256": "cdfb530c32c67a5d844fe992130e11602e6b53be33f38388742d3ae3d913691f",
+  "verified_decoding_repetitions": 45,
+  "token_equality_all_cases": true,
+  "candidate_manifest_matches": true,
+  "summary_medians_recomputed": true,
+  "attention_errors_below_tolerance": true,
+  "test_set_used": false,
+  "gpu": "NVIDIA L4",
+  "screening_speculative_slowdown_ratio": 1.2789003316495757,
+  "limitation": "Fixed-length synthetic inputs repeat a short paragraph, yielding 100% candidate acceptance. Do not generalize their speedup to eligibility prompts.",
+  "screening_timings_repeated": false
+}

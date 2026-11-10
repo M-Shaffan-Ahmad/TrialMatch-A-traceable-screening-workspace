@@ -1,0 +1,2 @@
+-r requirements-colab.txt
+streamlit==1.50.0

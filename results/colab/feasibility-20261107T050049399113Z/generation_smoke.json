@@ -1,0 +1,41 @@
+{
+  "prompt_source": "synthetic, not held-out data",
+  "note": "Library greedy generation is only a loading check, not custom decoding implementation.",
+  "base_target_token_ids": [
+    73594,
+    2236,
+    198,
+    515,
+    220,
+    330,
+    1502,
+    788,
+    330,
+    1921,
+    8415,
+    756,
+    220,
+    330,
+    68,
+    27480
+  ],
+  "draft_token_ids": [
+    73594,
+    2236,
+    198,
+    515,
+    220,
+    330,
+    1502,
+    788,
+    330,
+    82622,
+    756,
+    220,
+    330,
+    68,
+    27480,
+    48332
+  ],
+  "both_models_allocated_gib": 3.8150100708007812
+}

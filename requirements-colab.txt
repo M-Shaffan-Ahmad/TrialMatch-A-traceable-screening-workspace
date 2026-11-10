@@ -1,0 +1,9 @@
+# Proposed reproducible bootstrap; preserve Colab's preinstalled CUDA PyTorch.
+# The notebook records its actual PyTorch/CUDA versions and a complete pip freeze.
+transformers==4.57.1
+peft==0.17.1
+accelerate==1.10.1
+huggingface-hub==0.36.0
+numpy==2.2.6
+pyarrow==23.0.1
+matplotlib==3.10.7

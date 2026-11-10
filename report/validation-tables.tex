@@ -1,0 +1,57 @@
+Table~\ref{tab:detail} breaks down the selected model by criterion type. Table~\ref{tab:classes} gives per-class precision, recall and F1. The confusion matrices in Table~\ref{tab:confusion} show that the frequent not-excluded prediction absorbs many uncertain exclusion cases.
+\begin{table*}[t]
+\centering\caption{Selected adapter validation by criterion type}\label{tab:detail}
+\begin{tabular}{lrrrrr}
+\toprule
+Scope & N & Accuracy & Class macro F1 & Evidence micro P/R/F1 & Evidence macro P/R/F1\\\midrule
+Overall & 206 & 0.738 & 0.448 & 0.617/0.643/0.630 & 0.799/0.807/0.794\\
+Inclusion & 66 & 0.727 & 0.375 & 0.625/0.746/0.680 & 0.763/0.804/0.761\\
+Exclusion & 140 & 0.743 & 0.432 & 0.600/0.500/0.545 & 0.817/0.809/0.809\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table}[t]
+\centering\caption{Per-class validation scores. EX/IN denote excluded/included, NA not applicable, NEI insufficient information, NEX/NIN not excluded/not included.}\label{tab:classes}
+\begin{tabular}{llrrrr}
+\toprule
+Scope & Label & N & P & R & F1\\\midrule
+Overall & EX & 2 & 0.000 & 0.000 & 0.000\\
+Overall & IN & 35 & 0.862 & 0.714 & 0.781\\
+Overall & NA & 12 & 0.556 & 0.417 & 0.476\\
+Overall & NEI & 53 & 0.596 & 0.585 & 0.590\\
+Overall & NEX & 101 & 0.784 & 0.901 & 0.839\\
+Overall & NIN & 3 & 0.000 & 0.000 & 0.000\\
+Inclusion & IN & 35 & 0.862 & 0.714 & 0.781\\
+Inclusion & NA & 1 & 0.000 & 0.000 & 0.000\\
+Inclusion & NEI & 27 & 0.622 & 0.852 & 0.719\\
+Inclusion & NIN & 3 & 0.000 & 0.000 & 0.000\\
+Exclusion & EX & 2 & 0.000 & 0.000 & 0.000\\
+Exclusion & NA & 11 & 0.556 & 0.455 & 0.500\\
+Exclusion & NEI & 26 & 0.533 & 0.308 & 0.390\\
+Exclusion & NEX & 101 & 0.784 & 0.901 & 0.839\\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[t]
+\centering\caption{Validation confusion matrices. Rows are expert labels, columns are predictions. INV is invalid. A dash indicates an inapplicable label.}\label{tab:confusion}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Scope & Gold & EX & IN & NA & NEI & NEX & NIN & INV\\\midrule
+Overall & EX & 0 & 0 & 0 & 0 & 2 & 0 & 0\\
+Overall & IN & 0 & 25 & 0 & 10 & 0 & 0 & 0\\
+Overall & NA & 0 & 0 & 5 & 1 & 6 & 0 & 0\\
+Overall & NEI & 0 & 4 & 1 & 31 & 17 & 0 & 0\\
+Overall & NEX & 0 & 0 & 3 & 7 & 91 & 0 & 0\\
+Overall & NIN & 0 & 0 & 0 & 3 & 0 & 0 & 0\\
+Inclusion & IN & -- & 25 & 0 & 10 & -- & 0 & 0\\
+Inclusion & NA & -- & 0 & 0 & 1 & -- & 0 & 0\\
+Inclusion & NEI & -- & 4 & 0 & 23 & -- & 0 & 0\\
+Inclusion & NIN & -- & 0 & 0 & 3 & -- & 0 & 0\\
+Exclusion & EX & 0 & -- & 0 & 0 & 2 & -- & 0\\
+Exclusion & NA & 0 & -- & 5 & 0 & 6 & -- & 0\\
+Exclusion & NEI & 0 & -- & 1 & 8 & 17 & -- & 0\\
+Exclusion & NEX & 0 & -- & 3 & 7 & 91 & -- & 0\\
+\bottomrule
+\end{tabular}
+\end{table}

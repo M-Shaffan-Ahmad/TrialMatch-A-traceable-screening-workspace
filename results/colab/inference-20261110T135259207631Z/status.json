@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "test_set_used": false,
+  "correctness_cases": [
+    [
+      128,
+      32
+    ],
+    [
+      512,
+      64
+    ],
+    [
+      1024,
+      128
+    ]
+  ]
+}

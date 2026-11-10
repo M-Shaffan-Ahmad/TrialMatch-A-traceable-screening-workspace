@@ -1,0 +1,116 @@
+{
+  "uncached": {
+    "token_ids": [
+      4913,
+      68,
+      27480,
+      48332,
+      8077,
+      788,
+      508,
+      15,
+      1125,
+      330,
+      1502,
+      788,
+      330,
+      82622,
+      9207,
+      151645
+    ],
+    "prefill_seconds": 0.08300335300009465,
+    "decode_seconds": 1.2333660000003874,
+    "total_seconds": 1.316369353000482,
+    "tokens_per_second": 12.154643348031623,
+    "decode_tokens_per_second": 12.161840037746531,
+    "cache_tokens": 0
+  },
+  "cached": {
+    "token_ids": [
+      4913,
+      68,
+      27480,
+      48332,
+      8077,
+      788,
+      508,
+      15,
+      1125,
+      330,
+      1502,
+      788,
+      330,
+      82622,
+      9207,
+      151645
+    ],
+    "prefill_seconds": 0.08586511700013943,
+    "decode_seconds": 1.180245413999728,
+    "total_seconds": 1.2661105309998675,
+    "tokens_per_second": 12.637127334660542,
+    "decode_tokens_per_second": 12.709221168813164,
+    "cache_tokens": 345
+  },
+  "speculative": {
+    "token_ids": [
+      4913,
+      68,
+      27480,
+      48332,
+      8077,
+      788,
+      508,
+      15,
+      1125,
+      330,
+      1502,
+      788,
+      330,
+      82622,
+      9207,
+      151645
+    ],
+    "prefill_seconds": 0.12394790399957856,
+    "decode_seconds": 1.4952812740011723,
+    "total_seconds": 1.6192291780007508,
+    "tokens_per_second": 9.8812448647665,
+    "decode_tokens_per_second": 10.031557447290174,
+    "drafted": 18,
+    "accepted": 12,
+    "acceptance_rate": 0.6666666666666666,
+    "rounds": [
+      {
+        "drafted": 4,
+        "accepted": 4,
+        "rejected": false,
+        "prefix_cache_tokens": 330
+      },
+      {
+        "drafted": 4,
+        "accepted": 2,
+        "rejected": true,
+        "prefix_cache_tokens": 335
+      },
+      {
+        "drafted": 4,
+        "accepted": 4,
+        "rejected": false,
+        "prefix_cache_tokens": 338
+      },
+      {
+        "drafted": 4,
+        "accepted": 0,
+        "rejected": true,
+        "prefix_cache_tokens": 343
+      },
+      {
+        "drafted": 2,
+        "accepted": 2,
+        "rejected": false,
+        "prefix_cache_tokens": 344
+      }
+    ],
+    "target_cache_tokens": 346,
+    "draft_cache_tokens": 346
+  }
+}

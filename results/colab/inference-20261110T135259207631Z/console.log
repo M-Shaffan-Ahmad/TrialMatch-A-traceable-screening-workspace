@@ -1,0 +1,33 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794318805.059392   40594 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794318805.129534   40594 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794318807.574872   40594 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1794318807.575397   40594 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+{
+  "gpu": "NVIDIA L4",
+  "gpu_total_gib": 22.0343017578125,
+  "torch": "2.14.1+cu130",
+  "transformers": "4.57.1",
+  "peft": "0.17.1",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "dtype": "torch.bfloat16",
+  "cuda": "13.0",
+  "warmups": 2,
+  "repeats": 5,
+  "draft_tokens": 4,
+  "memory_policy": "PyTorch allocated/reserved device memory, baseline and incremental peak; not process/driver total.",
+  "timing_policy": "CUDA synchronize before/after measurements; warmups; cache cleared outside timing; end-to-end includes Python overhead.",
+  "attention_backend": "eager for selected models; educational tiled attention tested separately, not patched into model"
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+128/32 uncached: median 2.602s
+128/32 cached: median 2.535s
+128/32 speculative: median 2.268s
+512/64 uncached: median 5.722s
+512/64 cached: median 5.000s
+512/64 speculative: median 4.334s
+1024/128 uncached: median 27.306s
+1024/128 cached: median 10.147s
+1024/128 speculative: median 8.769s

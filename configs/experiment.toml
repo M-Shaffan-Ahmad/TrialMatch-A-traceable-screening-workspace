@@ -1,0 +1,50 @@
+# Model pair selected by the user; training hyperparameters remain unvalidated.
+seed = 42
+
+[data]
+repository = "ncbi/TrialGPT-Criterion-Annotations"
+train_patients = 37
+validation_patients = 8
+test_patients = 8
+
+[compute]
+platform = "google_colab"
+# User reports A100 access through their Colab plan. Verify each runtime.
+expected_gpu = "NVIDIA A100"
+# Record actual VRAM and supported precision before choosing batch size.
+
+[model]
+target = "Qwen/Qwen2.5-1.5B-Instruct"
+draft = "Qwen/Qwen2.5-0.5B-Instruct"
+# Exact commits are pinned in configs/model_revisions.json after tokenizer preflight.
+max_sequence_length = 2048
+# Initially reject overlength examples; do not silently remove evidence.
+overlength_policy = "reject_and_log"
+
+[training]
+method = "lora"
+epochs = 3
+learning_rate = 0.0002
+per_device_batch_size = 2
+gradient_accumulation_steps = 4
+lora_rank = 16
+lora_alpha = 32
+lora_dropout = 0.05
+warmup_ratio = 0.1
+weight_decay = 0.01
+# Tune using validation only. Enable bf16 only on supported hardware.
+
+[evaluation]
+batch_size = 4
+# Fixed overall label set and strict invalid-output policy; see docs/training-workflow.md.
+
+[generation]
+do_sample = false
+max_new_tokens = 192
+speculative_draft_tokens = 4
+
+[benchmark]
+input_lengths = [128, 512, 1024]
+output_lengths = [32, 64, 128]
+warmup_runs = 2
+repetitions = 5
