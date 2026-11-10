@@ -1,6 +1,6 @@
 # TrialMatch - Generative AI Assignment 2
 
-[IEEE report](TrialMatch-IEEE-Report.pdf) · [Demo video](https://youtu.be/7SLR7LBg0mo) · [Browser setup](app/README.md) · [Submission details](SUBMISSION-LINKS.txt)
+[IEEE report](TrialMatch-IEEE-Report.pdf) · [Demo video](https://youtu.be/7SLR7LBg0mo) · [Selected adapter ZIP](https://github.com/M-Shaffan-Ahmad/TrialMatch-A-traceable-screening-workspace/raw/f6d5ea50e408df3ccae7795f00dc44d8d764edfb/trialmatch-selected-adapter.zip) · [Browser setup](app/README.md) · [Submission details](SUBMISSION-LINKS.txt)
 
 **Muhammad Shaffan Ahmad · 23i-0673 · Gen AI Section A**
 

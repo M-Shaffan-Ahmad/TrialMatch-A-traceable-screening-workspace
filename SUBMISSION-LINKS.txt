@@ -10,10 +10,9 @@ https://github.com/M-Shaffan-Ahmad/TrialMatch-A-traceable-screening-workspace
 Demo video (URL provided by the student)
 https://youtu.be/7SLR7LBg0mo
 
-Selected adapter attachment
-trialmatch-selected-adapter.zip
-Publish this exact ZIP as a GitHub Release asset or on an evaluator-accessible
-download service. Paste the resulting direct download link in Classroom.
+Selected adapter download
+https://github.com/M-Shaffan-Ahmad/TrialMatch-A-traceable-screening-workspace/raw/f6d5ea50e408df3ccae7795f00dc44d8d764edfb/trialmatch-selected-adapter.zip
+
 Base checkpoint: Qwen/Qwen2.5-1.5B-Instruct
 Base revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
 Adapter: prompt v2, unweighted LoRA, epoch 3.
